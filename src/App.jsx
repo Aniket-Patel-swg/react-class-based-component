@@ -1,12 +1,17 @@
-import { useState } from 'react'
+import React, { Component, useState } from 'react';
 import './App.css';
-import React, { Component } from 'react';
+import Navbar from './Components/Navbar';
+import News from './Components/News';
 
 export default class App extends Component {
+
+  name = 'Aniket'
   render() {  
     return (
       <>
-        This an checking text 
+        {/* Hello I'm {this.name} <br /> And i'm learning class based Component in React JS. */}
+        <Navbar />
+        <News />
       </>
       )
   }
